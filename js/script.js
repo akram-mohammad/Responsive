@@ -22,9 +22,9 @@ $(window).on('load resize', function () {
         $('#navbar').css('position','fixed');
     }
     if(wScroll<aboutScroll-10){
-        $('.float').fadeOut(300);
+        $('.float').css('display','none');
     } else {
-        $('.float').fadeIn(300);
+        $('.float').css('display','block');
     }
     if(window.innerWidth<601){
         bars.attr('class', 'fas fa-bars py-1');
