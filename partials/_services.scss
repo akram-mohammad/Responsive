@@ -1,0 +1,37 @@
+#services {
+    .container {
+        padding: 90px 15px;
+        text-align: center;
+        .row {
+            margin-top: 90px;
+            text-align: left;
+            .line {
+                height: 1px;
+                background-color: #e5e5e5;
+            }
+            i {
+                width: 20%;
+                color: #95e1d3;
+                display: flex;
+                justify-content: center;
+            }
+            h5 {
+                @include font(0.9rem,400);
+                color: #333333;
+            }
+            p {
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #services {
+        .container {
+            padding: 50px 15px;
+        }
+    }
+}

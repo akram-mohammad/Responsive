@@ -1,0 +1,109 @@
+#navbar {
+  position: absolute;
+  z-index: 16;
+  .container-lg {
+    .navbar-brand {
+      color: #ffffff;
+      @include font(1.875rem, 700);
+    }
+    .navbar-toggler {
+      span {
+        color: white;
+      }
+    }
+    button {
+      border-color: white;
+      i {
+        color: white;
+      }
+    }
+    .nav-item {
+      margin-left: 30px;
+      width: 15%;
+    }
+    i,
+    .nav-link {
+      color: white;
+      &:hover {
+        color: #fce38a;
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        @include font(0.9rem, 500);
+      }
+      .active {
+        .nav-link {
+          position: relative;
+          color: #fce38a;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 70%;
+            background-color: #fce38a;
+            height: 3px;
+            top: 100%;
+            left: 15%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav-after {
+  .nav-link {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #navbar {
+    .container-lg {
+      .navbar-nav {
+        .nav-item {
+          margin-left: 10px;
+        }
+        .fa-shopping-cart {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #navbar {
+    background-color: #f38181;
+    .container-lg {
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+      .navbar-nav {
+        .fa-shopping-cart {
+          margin-left: 0;
+        }
+      }
+      .navbar-nav {
+        .nav-link {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  #navbar {
+    .container-lg {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+      .navbar-nav {
+        .nav-link {
+          @include font(0.82rem, 500);
+        }
+      }
+    }
+  }
+}

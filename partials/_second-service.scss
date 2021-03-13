@@ -1,0 +1,45 @@
+#second-service {
+    .container {
+        padding: 120px 15px;
+        .above-row {
+            margin: auto;
+            margin-top: 80px;
+            width: 75%;
+        }
+        .row {
+            margin-top: 80px;
+            img {
+                object-fit: cover;
+            }
+            h5 {
+                @include font(0.9rem,400);
+                color: #333333;
+                margin-bottom: 0;
+            }
+            button {
+                text-decoration: none;
+            }
+            p {
+                font-style: italic;
+                margin-bottom: 0;
+            }
+            i {
+                color: #95e1d3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    #second-service {
+        .container {
+            padding: 50px 15px;
+            .row {
+                margin-top: 40px;
+            }
+            .above-row {
+                width: 100%;
+            }
+        }
+    }
+}

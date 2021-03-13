@@ -1,0 +1,61 @@
+#quote {
+    background-color: #f8f8f8;
+    .container {
+        position: relative;
+        /* the slides */
+        .slick-slide {
+            margin: 0 10px;
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 -10px;
+        }
+        .slick-prev:before, .slick-next:before { 
+            color:#95e1d3;
+            
+        }
+        .slick-prev {
+            margin-left: 30px;
+            z-index: 1;
+        }
+        .slick-next {
+            margin-right: 30px;
+            z-index: 1;
+        }
+        .row {
+            .fa-comments {
+                &::before {
+                    border: 3px solid #95e1d3;
+                    padding: 20px;
+                }
+            }
+            i {
+                color: #95e1d3;
+            }
+            p {
+                @include font(1.1rem,300);
+                line-height: 1.5rem;
+                font-style: italic;
+            }
+            h6::before {
+                content: '';
+                display: inline-block;
+                width: 7%;
+                height: 3px;
+                margin-right: 0.5vw;
+                background-color: #f38181;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px){
+    #quote {
+        .container {
+            .slick-next,.slick-prev {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+}

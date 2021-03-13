@@ -1,0 +1,53 @@
+#feature {
+  position: relative;
+  background-position: center;
+  .container {
+    padding-top: 100px;
+    text-align: center;
+    div {
+      margin-top: 90px;
+      .mob {
+        position: absolute;
+        top: 54%;
+        left: 56%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #feature {
+    .container {
+      padding-top: 50px;
+      div {
+        .mob {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #feature {
+    .container {
+      padding-top: 50px;
+      //   height: 120vw;
+      div {
+        margin-top: 30px;
+        .mob {
+          display: block;
+          position: relative;
+          top: 0%;
+          left: 0%;
+        }
+      }
+      h3 {
+        width: 100%;
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

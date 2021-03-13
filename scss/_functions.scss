@@ -1,0 +1,3 @@
+@function inchpx($inch) {
+    @return $inch * 72;
+}

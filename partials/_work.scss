@@ -1,0 +1,119 @@
+#work {
+    .container {
+        padding: 100px 15px 0;
+    }
+    .slick-prev:before, .slick-next:before { 
+        color:white;
+        
+    }
+    .slick-prev {
+        margin-left: 30px;
+        z-index: 1;
+    }
+    .slick-next {
+        margin-right: 30px;
+        z-index: 1;
+    }
+    .work__list {
+        margin-top: 4vw;
+        div {
+            .row {
+                height: 40vw;
+                overflow: hidden;
+            }
+        }
+        a {
+            position: relative;
+            overflow: hidden;
+            div {
+                padding: 7vw 0;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: opacity 0.3s ease-out ;
+                background-image: linear-gradient(to bottom, #f38181, #fce38a);
+                p,i,span {
+                    color: white;
+                }
+            }
+            .middle-img {
+                padding: 17vw 0;
+            }
+            &:hover {
+                div {
+                    opacity: 0.9;
+                    transition: opacity 0.3s ease-out;
+                    background-image: linear-gradient(to bottom, #f38181, #fce38a);
+                }
+            }
+        }
+        img {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            object-fit: cover;
+            z-index: -1;
+        }
+    }
+    .above-row {
+        margin: auto;
+        margin-top: 80px;
+    }
+    p {
+        font-style: italic;
+    }
+    .team__list {
+        margin-top: 4vw;
+    }
+    h5 {
+        @include font (18px,700);
+    }
+}
+
+@media screen and (max-width:768px){
+    #work {
+        .container {
+            padding: 50px 15px 0;
+        }
+    }
+}
+
+
+@media screen and (max-width:767px){
+    #work {
+        .work__list {
+            div {
+                .row {
+                    height: 80vw;
+                }
+            }
+            a {
+                div {
+                    padding: 12vw 0;
+                }
+                .middle-img {
+                    padding: 32vw 0; 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+    #work {
+        .work__list {
+            a {
+                height: 80vw;
+                div {
+                    padding: 28vw 0;
+                }
+                .middle-img {
+                    padding: 28vw 0; 
+                }
+            }
+        }
+    }
+}

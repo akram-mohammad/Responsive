@@ -1,0 +1,77 @@
+#blog {
+    margin-bottom: 100px;
+    .container {
+        padding: 100px 15px 0;
+        .row {
+            margin-top: 90px;
+            .card {
+                position: relative;
+                // padding: 0;
+                border: 0;
+                .upper-img {
+                    position: relative;
+                    .card__date {
+                        position: absolute;
+                        left: -10px;
+                        bottom: 10px;
+                        height: 70px;
+                        width: 60px;
+                        background-color: #95e1d3;
+                        h3 {
+                            margin: 0;
+                            padding-top: 5px;
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        p {
+                            font-style: italic;
+                            margin: 0;
+                            padding-bottom: 5px;
+                            position: relative;
+                        }
+                        h5,p,h3 {
+                            color: white;
+                        }
+                    }
+                }
+                .card-body {
+                    padding: 20px 0;
+                }
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                }
+                i {
+                    color: #95e1d3;
+                }
+                a {
+                    font-style: italic;
+                }
+                .card-text::after {
+                    position: absolute;
+                    content: '';
+                    top: 87%;
+                    left: 4%;
+                    width: 93%;
+                    height: 1px;
+                    background-color: #d1d1d1;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    #blog {
+        margin-bottom: 0px;
+        .container {
+            padding: 50px 15px;
+            .row {
+                margin-top: 70px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+#clients {
+    margin: 100px auto 0;
+    background-size: cover;
+    .container {
+        padding: 100px 15px;
+        .row {
+            margin-top: 80px;
+            .media {
+                margin-bottom: 20px;
+                img {
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+                .media-body {
+                    div {
+                        width: 50px;
+                        height: 3px;
+                        margin-bottom: 20px;
+                        background-color: #f38181;
+                    }
+                }
+                .upper-p {
+                    margin-bottom: 12px;
+                    font-style: italic;
+                }
+                span {
+                    color: #333333;
+                    font-weight: 400;
+                }
+                p {
+                    font-size: 0.9rem;
+                    color: #7a7a7a;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:767px) {
+    #clients {
+        margin: 40px auto 0;
+        .container {
+            padding: 50px 15px;
+        }
+    }
+}
