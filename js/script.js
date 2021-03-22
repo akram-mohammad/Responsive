@@ -93,6 +93,10 @@ $('.float').click(function(){
     }
 });
 
+$(window).on('load',()=> {
+    $('.loader-wrapper').fadeOut(1000);
+})
+
 $(document).ready(function(){
     $('#quote .slick').slick({
         autoplay: true
