@@ -94,7 +94,7 @@ $('.float').click(function(){
 });
 
 $(window).on('load',()=> {
-    $('.loader-wrapper').fadeOut(1000);
+    $('.loader-wrapper').fadeOut(300);
 })
 
 $(document).ready(function(){
